@@ -1,30 +1,25 @@
 import java.util.Scanner;
 
-public class main{
+public class Main{
     public static void main (String[] args){
 
-        String fraseOriginal = "Quero ser programador. Aprendi Java no Devisate Marília.";
+        Scanner scanner = new Scanner(System.in, "cp850");
+        String frase = "";
+        String fraseFormatada = "";
+        int pontuação;
+
+        char[] letrasSemAcento = {'A','A','A','A','E','E','E','I','I','I','O','O','O','O','U','U','U'};
+        char[] letrasComAcento = {'Á','À','Ã','Â','É','È','Ê','Í','Ì','Î','Ó','Ò','Õ','Ô','Ú','Ù','Û'};
+        char[] simbolos = {'?','/','°','!','@','#','$','%','¨','&','*','(',')','_','-','+','=','§',
+        '[',']','{','}','ª','º','|','¹','²','³','¬','£','¢','<','>',',','.',':',';'};
 
         System.out.println("---------------------------------");
         System.out.println("     BEM VINDO AO CIFRADOR");        
         System.out.println("---------------------------------");
+        System.out.println("\nEscolha uma das opções abaixo: \n1- Cifrador\n2- Decifrador\n0- sair");
 
-        // Aqui é feita a limpeza da frase
-        String fraseLimpa = limparTexto(fraseOriginal);
+
         
-        System.out.println("\nFrase original : ");
-        System.out.println(fraseOriginal);
-
-        System.out.println("\nFrase limpa : ");
-        System.out.println(fraseLimpa);
-
-        System.out.println("\nTamanho da frase limpa :  "+fraseLimpa.length());
-
-        // Aqui é onde a frase será cifrada e decifrada com salto de 5 caracteres
-        int salto = 5;
-
-        System.out.println("" +salto);
-
 
     }
 }
